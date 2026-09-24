@@ -87,7 +87,7 @@ const feedbackForm = document.querySelector ("#feedbackForm");
 
 feedbackForm.addEventListener("submit", function (event) {
     event.preventDefault();
-    if (feedback.value.length < 10) {
+    if (feedback.value.length < 10 || feedback.value.length > 200) {
         status.textContent = "Error";
     }
     else {
@@ -106,7 +106,7 @@ document.addEventListener("keydown", function (event){
     console.log("Key pressed: " + event.key);
     console.log("Key code: " + event.code);
     console.log(event);
-    keyinfo.textContent = event.key;
+    keyinfo.textContent = "Key: " + event.key + " Code: " + event.code;
     keybox.textContent = event.key;
     if (event.key === "Enter") {
         keybox.style.backgroundColor = "pink";
