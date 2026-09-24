@@ -4,9 +4,12 @@
     <meta charset="UTF-8" />
     <link rel="stylesheet" href="main.css" />
     <title>Lempieläimeni</title>
+
+    <script src="animal.js" defer></script>
   </head>
   <body>
-    <h1>Sammakko!</h1>
+    <h1 id="animalTitle">My favorite Animal</h1>
+    <h2>Sammakko!</h2>
 
     <p>
       Hi! My name is Lidiia and I'm a student at Laurea University. Right now
@@ -25,6 +28,19 @@
     <a href="https://fi.wikipedia.org/wiki/Sammakko" target="_blank">
       Lisää sammakoista
     </a>
+    <p><button id="animalButton">Click for the Frog</button></p>
+
+    <h2>Choose another animal</h2>
     
+   
+    <form id ="animalForm">
+      <label for = "animalInput">Type an animal:</label>
+      <input id="animalInput" type="text" placeholder="Type an animal">
+      <button type="submit">Submit</button>
+    </form>
+
+     <p id="animalOutput"></p>
+
+  
   </body>
 </html>
